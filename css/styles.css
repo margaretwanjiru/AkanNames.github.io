@@ -1,0 +1,58 @@
+h1 {
+    margin-top:0;
+    font-family: 'Calistoga', cursive;
+    text-align:center;
+    text-decoration:underline;
+}
+body{
+    background-color: rgb(146, 204, 204);
+    font-family: 'Rokkitt', serif;
+    font-size:23px;
+}
+.text {
+    font-size: 300px;
+    color: #c4351f;
+}
+.text:hover{
+    color:green;
+}
+.text1 {
+    font-size: 300px;
+    color: #f7d83e;
+
+}
+.text1:hover{
+    color:black;
+}
+.text2 {
+    font-size: 300px;
+    color: green;
+}
+.text2:hover{
+    color:#c4351f;
+}
+.text3 {
+    font-size: 300px;
+    color: black;
+}
+.text3:hover{
+  color:#f7d83e;
+}
+.about{
+    display:flex;
+    justify-content: space-between;
+}
+h2{
+    font-weight:40px;
+    font-size:60px;
+}
+.know{
+    display:flex;
+    flex-direction:column;
+}
+.form {
+    margin-left:5%;
+}
+.submit-form{
+    background-color:green;
+}
