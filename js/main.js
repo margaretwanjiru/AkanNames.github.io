@@ -1,29 +1,62 @@
-var string = function akanname() {
-    var date=document.getElementByid("date").value;
-    var month =document.getElementByid("month").value;
-    var year =document.getElementByid("year").value;
-    var dob =new Date ("date" + "/" +"month" + "/" +"year");
-    var birthday =dob.getDay();
-    var genderM =document.getElementByid("male");
-    var genderF =document.getElementByid("female");
-    var returns=document.getElementByid("return-value");
-    var weekdays=("Monday", "Tuesday" ,"Wednesday", "Thursday" ,"Friday", "Saturday", "Sunday");
-    var maleNames =("Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame", "Kwasi");
-    var femaleNames=("Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama" , "Akosua")
-    
-    if (date < 1 || date > 31) {
-        alert("invalid date");
-        return false;
-    }
-    else if (month < 1 || month > 12 || month == 2 && day > 29 ) {
-        alert ("invalid month");
-        return false;
-    }
-    else if (year <1930 || year > "" ) {
-        alert ("invalid year");
-        return false;
+function akanname() 
+{
+    var maleNames =["Kwasi", "Kwadwo","Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    var femaleNames =["Akosua", "Adwoa","Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+    var century =parseInt(document.getElementByid("CC").value);
+    var date=parseInt(document.getElementByid("DD").value);
+    var month =parseInt(document.getElementByid("MM").value);
+    var year =parseInt(document.getElementByid("YY").value);
+
+    var gender=document.genderSelector('input[name="gender"]:checked').value;
+   
+   var day = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD )%7;
+   
+   
+   if (gender ==1) {
+       if (day ===0){
+           alert("Hey + 'maleName + you were born on a Sunday");
+       }
+       else if (day ===1) {
+        alert("Hey + 'maleName + you were born on a Monday");
+       }
+       else if (day ===2) {
+        alert("Hey + 'maleName + you were born on a Tuesday");
+       } 
+       else if (day ===3) {
+        alert("Hey + 'maleName + you were born on a Wednesday");
+       }
+       else if (day ===4) {
+        alert("Hey + 'maleName + you were born on a Thursday");
+       }
+       else if (day ===5) {
+        alert("Hey + 'maleName + you were born on a Friday");
+       }
+       else if (day ===6) { 
+        alert("Hey + 'maleName + you were born on a Saturday");
+       }
     }
     else {
-        return true; 
+        if (day ===0) {
+            alert("Hey + 'femaleName + you were born on a Sunday");
+        }
+        else if (day===1) {
+            alert("Hey + 'femaleName + you were born on a Monday");
+        }
+        else if (day ===2) {
+            alert("Hey + 'femaleName + you were born on a Tuesday");
+        }
+        else if (day ===3) {
+            alert("Hey + 'femaleName + you were born on a Wednesday");
+        }
+        else if (day===4) {
+            alert("Hey + 'femaleName + you were born on a Thursday");
+        }
+        else if (day===5) {
+            alert("Hey + 'femaleName + you were born on a Friday");
+        }
+        else if (day===6) {
+            alert("Hey + 'femaleName + you were born on a Sartuday");
+        }
     }
-}
+   }
