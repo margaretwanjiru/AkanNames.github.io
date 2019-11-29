@@ -1,34 +1,29 @@
-var string = function name() {
+var string = function akanname() {
     var date=document.getElementByid("date").value;
-    var year =document.getElementByid("year").value;
     var month =document.getElementByid("month").value;
-    var days = ["Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var dob =date.getDay();
-    var male=document.getElementByid("male");
-    var female=document.getElementbyid("female");
-    var maleNames = ["Kwasi", "Kwadwo", "Kwaku", "Kwabena", "Yaw", "Kofi", "Kwame"];
-    var femaleNames = ["Akosua", "Adwoa", "Abenaa", "AKua", "Yaa", "Afua", "Ama"];
-    var result=document.getElementbyid(alert);
-    var maleNames = ["Kwasi", "Kwadwo", "Kwaku", "Kwabena", "Yaw", "Kofi", "Kwame"];
-    var femaleNames = ["Akosua", "Adwoa", "Abenaa", "AKua", "Yaa", "Afua", "Ama"];
-    if (year == "" || year.length < 4 || year.length > 4){
-        alert("Hey you need to enter a valid year!");
+    var year =document.getElementByid("year").value;
+    var dob =new Date ("date" + "/" +"month" + "/" +"year");
+    var birthday =dob.getDay();
+    var genderM =document.getElementByid("male");
+    var genderF =document.getElementByid("female");
+    var returns=document.getElementByid("return-value");
+    var weekdays=("Monday", "Tuesday" ,"Wednesday", "Thursday" ,"Friday", "Saturday", "Sunday");
+    var maleNames =("Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame", "Kwasi");
+    var femaleNames=("Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama" , "Akosua")
+    
+    if (date < 1 || date > 31) {
+        alert("invalid date");
+        return false;
     }
-    else if (month < 0 || month > 12 ){
-        alert("Hey you need to enter a valid month!");
+    else if (month < 1 || month > 12 || month == 2 && day > 29 ) {
+        alert ("invalid month");
+        return false;
     }
-    else if( dayOfMonth < 0 || dayOfMonth >31) {
-        alert("Hey you need to re-enter a valid day!");
+    else if (year <1930 || year > "" ) {
+        alert ("invalid year");
+        return false;
     }
-    else if (male.checked == false && female.checked == false){
-        alert("You need to specify your gender!");
+    else {
+        return true; 
     }
-    else if (male.checked == true){
-        result.innerHTML = "Hey " + maleNames[birthDay] +  ",this is your Ghanaian name.";
-    } 
-    else if (female.checked == true){
-        result.innerHTML = "Hey " + femaleNames[birthDay] +  ",this is your Ghananian name.";
-    }
-}
-
 }
