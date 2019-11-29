@@ -66,27 +66,25 @@
 
 function getName() {
 
-    var day = document.getElementById("DD").Value;
+    var year = document.getElementById("YY").value;
     var month = document.getElementById("MM").value;
-    var Year = document.getElementById("YY").value;
-    var date = new Date($("year" + "/" + "month" + "/" + "day"));
+    var day = document.getElementById("DD").Value;
+    var date = new Date(`${year}-${month}-${day}`);
     var dob = date.getDay();
     var male = document.getElementById("male");
     var female = document.getElementById("female");
-
-    var result = document.getElementById("result");
 
     var Weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-    if ("male.checked == true") {
-        display.innerHTML = maleNames[dob] + "is your Akan name";
-    }  else {
-        display.innerHTML =femaleNames [dob] + "is your Akan name";
+
+    if (male.checked == false && female.checked == false) {
+        alert("kanugu");
+    } else if (male.checked == true) {
+        // 
+        alert("Hey " + maleNames[dob] + " is your Akan name");
+    } else {
+        alert("Hey " + femaleNames[dob] + "is your Akan name");
     }
-
-
-
-
 }
