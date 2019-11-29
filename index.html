@@ -36,10 +36,10 @@
                     <form>
                         <h3><b>CURIOUS?</b></h3>
                         <h3><strong><i>Fill this form to know your Akan name</i></strong></h3>
-                        <div>
+                        <!-- <div>
                             <label for="CC">Century:</label>
                             <input type="number" id="CC" placeholder="Century" required>
-                        </div>
+                        </div> -->
                         <div>
                             <label for="YY">Year:</label>
                             <input type="number" id="YY" class="year" placeholder="Year " min="1900" required>
@@ -55,17 +55,17 @@
                         </div>
 
                         <div class="gender">
-                            <input type="radio" name="gender" value="Male" required>Male
-                            <input type="radio" name="gender" value="Female" required>Female
+                            <input id="male" type="radio" name="gender" required>Male
+                            <input id="female" type="radio" name="gender" required>Female
                         </div>
                         <div>
-                            <button onClick="getName()">submit</button>
+                            <button type="button" onclick="getName()">submit</button>
                         </div>
 
                     </form>
                 </div>
                 <div id="yourName">
-                    <p id="#display"></p>
+                    <p id="display"></p>
                 </div>
             </div>
         </div>

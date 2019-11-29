@@ -82,7 +82,6 @@ function getName() {
     if (male.checked == false && female.checked == false) {
         alert("kanugu");
     } else if (male.checked == true) {
-        // 
         alert("Hey " + maleNames[dob] + " is your Akan name");
     } else {
         alert("Hey " + femaleNames[dob] + "is your Akan name");
