@@ -6,7 +6,7 @@ h1 {
 }
 
 body {
-    background-image:url("https://www.essence.com/wp-content/uploads/2019/10/Screen-Shot-2019-10-15-at-11.39.46-AM-1920x1080.png");
+    background-image:URL("https://www.essence.com/wp-content/uploads/2019/10/Screen-Shot-2019-10-15-at-11.39.46-AM-1920x1080.png");
     background-size:cover;
     background-repeat:no-repeat;
     font-family: 'Rokkitt', serif;
