@@ -70,7 +70,7 @@ function getName() {
     var month = document.getElementById("MM").value;
     var day = document.getElementById("DD").Value;
     var date = new Date(`${year}-${month}-${day}`);
-    var dob = date.getDay();
+    var dob =(parseIntdate.getDay());
     var male = document.getElementById("male");
     var female = document.getElementById("female");
 
