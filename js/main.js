@@ -20,10 +20,10 @@ function getName() {
     else if (year == "" || year.length < 4 || year.length > 4){
         alert("Hey you need to enter a valid year!");
     }
-    else if (month < 0 || month > 12 ){
+    else if (month < 1 || month > 12 || month == 2 && day > 29 ){
         alert("Hey you need to enter a valid month!");
     }
-    else if( day < 0 || day >31) {
+    else if( day < 1 || day >31) {
         alert("Hey you need to re-enter a valid day!");
     }
     else if (male.checked == true) {
