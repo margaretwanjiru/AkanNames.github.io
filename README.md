@@ -14,11 +14,15 @@
  * You can click the link below for the live site on github
    * https://margaretwanjiru.github.io/AkanNames.github.io/
 
-##### Technologies used
+#### Technologies used
 * Html 
 * css
 * bootstrap
 * javascript
+
+##### Contacts info
+* Email : sairzmargaret44@gmail.com
+* +254 708152764
 
 ##### License info
  * - Licensed under the  [MIT license](LICENSE).
