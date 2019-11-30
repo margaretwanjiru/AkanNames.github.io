@@ -11,7 +11,7 @@
  #### Set up instructions
  * You need to have a good network connection.
  * You need to have a github account so that you can deploy the project and get a live link.
- * You can click the link below to deploy the live site on github
+ * You can click the link below for the live site on github
    * https://margaretwanjiru.github.io/AkanNames.github.io/
 
 ##### Technologies used
@@ -20,3 +20,5 @@
 * bootstrap
 * javascript
 
+##### License info
+ * - Licensed under the  [MIT license](LICENSE).
