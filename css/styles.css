@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
     font-family: 'Rokkitt', serif;
     font-size: 23px;
-    width:100%;
+    width: 100%;
 }
 
 .text {
@@ -64,22 +64,18 @@ h2 {
 }
 
 .know {
-    background-color:gainsboro;
+    background-color: gainsboro;
     display: flex;
     flex-direction: column;
-}
-.akan {
-    display: flex;
-    width:100%;
+    width: 100%;
 }
 
 .form {
-    width:80%;
-    height:100%;
+    width: 80%;
+    height: 100%;
     margin-left: 7%;
     float: right;
-    background-color:gainsboro;
-    /* margin-bottom: 100vh; */
+    background-color: gainsboro;
 }
 
 .form button {
@@ -107,14 +103,14 @@ h2 {
 }
 
 .month {
-    margin-left: 4%;
+    margin-left: 2%;
 }
 
 .day {
     margin-left: 8.4%;
 }
 
- @media screen and (max-width :720px) {
+@media screen and (max-width :720px) {
 
     .text,
     .text1,
@@ -136,19 +132,23 @@ h2 {
     body {
         overflow-x: hidden;
     }
-    
+
 }
+
 @media screen and (max-width :1024px) {
+
     .text,
     .text1,
     .text2,
     .text3 {
         font-size: 60px;
     }
+
     body {
         font-size: 10px;
     }
-    .jumbotron{
-        height:10%;
+
+    .jumbotron {
+        height: 10%;
     }
 }

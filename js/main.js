@@ -27,9 +27,9 @@ function getName() {
         alert("Hey you need to re-enter a valid day!");
     }
     else if (male.checked == true) {
-        alert("Hey!, " + maleNames[dob] + " is your Akan name");
+        alert("Hey, " + maleNames[dob] + " is your Akan name");
     } else {
-        alert("Hey!, " + femaleNames[dob] + " is your Akan name");
+        alert("Hey, " + femaleNames[dob] + " is your Akan name");
     }
 
 }
