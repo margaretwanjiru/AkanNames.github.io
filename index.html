@@ -14,57 +14,80 @@
 
 <body>
     <div class="container">
-        <h1><span class="text">A</span>
-            <span class="text1">K</span>
-            <span class="text2">A</span>
-            <span class="text3">N</span>
-        </h1>
-        <div class="jumbotron">
-            <div class="about">
-                <div class="know">
-                    <h2><strong>Did you know?</strong></h2>
-                    <p>A long time ago in Ghana, people named their
-                        <br>children according to the order in which they
-                        <br>were born or even the day of the week they
-                        <br>were born.This has changed with generations
-                        <br>and now this tradition is no longer practised
-                        <br>but luckily,there is a way you can find out
-                        <br>your Akan name if only you know your birthday.
-                    </p>
-                </div>
-                <div class="form">
-                    <form>
-                        <h3><b>CURIOUS?</b></h3>
-                        <h3><strong><i>Fill this form to know your Akan name</i></strong></h3>
-                        <div>
-                            <label for="YY">Year:</label>
-                            <input type="number" id="YY" class="year" placeholder="Year of birth " min="1900" required>
-                        </div>
-                        <div>
-                            <label for="MM">Month:</label>
-                            <input type="number" id="MM" class="month" placeholder="Month of birth "  max="12" required>
-                        </div>
-                        <div>
-                            <label for="DD">Day:</label>
-                            <input type="number" id="DD" class="day" placeholder="Date of birth"  max="31" width="100%" required>
-                        </div>
-
-                        <div class="gender">
-                            <input id="male" type="radio" name="gender" required>Male
-                            <input id="female" type="radio" name="gender" required>Female
-                        </div>
-                        <div>
-                            <button type="button" onclick="getName()">submit</button>
-                            <input type="reset" value="Reset">
-                        </div>
-
-                    </form>
-                </div>
-                <div id="yourName">
-                    <p id="display"></p>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1><span class="text col-md-3">A</span>
+                    <span class="text1 col-md-3">K</span>
+                    <span class="text2 col-md-3">A</span>
+                    <span class="text3 col-md-3">N</span>
+                </h1>
             </div>
         </div>
+        <div class="akan">
+            <div class="jumbotron" style="width: 30%; height: 50%;">
+                <div class="about">
+                        <h2><strong>Did you know?</strong></h2>
+                        <p>A long time ago in Ghana, people named their
+                            <br>children according to the order in which they
+                            <br>were born or even the day of the week they
+                            <br>were born.This has changed with generations
+                            <br>and now this tradition is no longer practised
+                            <br>but luckily,there is a way you can find out
+                            <br>your Akan name if only you know your birthday.
+                        </p>
+                </div>
+            </div>
+            <div class="form">
+                <form>
+                    <h3><b>CURIOUS?</b></h3>
+                    <h3><strong><i>Fill this form to know your Akan name</i></strong></h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class>
+                                    <label for="YY">Year:</label>
+                                    <input type="number" id="YY" class="year" placeholder="Year of birth " min="1900"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+                                    <label for="MM">Month:</label>
+                                    <input type="number" id="MM" class="month" placeholder="Month of birth " max="12"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+                                    <label for="DD">Day:</label>
+                                    <input type="number" id="DD" class="day" placeholder="Date of birth" max="31"
+                                        width="100%" required>
+                                </div>
+
+                                <div class="gender">
+                                    <input id="male" type="radio" name="gender" required>Male
+                                    <input id="female" type="radio" name="gender" required>Female
+                                </div>
+                                <div>
+                                    <button type="button" onclick="getName()">submit</button>
+                                    <input type="reset" value="Reset">
+                                </div>
+
+                </form>
+            </div>
+        </div>
+        <div id="yourName">
+            <p id="display"></p>
+        </div>
+
     </div>
     <script src="js/main.js"></script>
 

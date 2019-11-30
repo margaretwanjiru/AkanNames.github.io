@@ -22,7 +22,7 @@
 
 #### BDD
 * Screenshot
-(http:///home/moringaschool/Pictures/Screenshot from 2019-11-30 09-57-22.png)
+![alt text](https://files.slack.com/files-pri/T077KKCG6-FQT2MNP0B/screenshot_from_2019-11-30_09-57-22.png)
  
 
 * This application contains a short description and has a form that someone can fill his/her birthday details.The application then responds with the corresponding Akan name. If any of the fields are invalid an alert will notify the user to change and correct the invalid field. 
