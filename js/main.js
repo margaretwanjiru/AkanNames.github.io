@@ -26,10 +26,10 @@ function getName() {
     else if( day < 1 || day >31) {
         alert("Hey you need to re-enter a valid day!");
     }
-    else if (male.checked == true) {
-        alert("Hey, " + maleNames[dob] + " is your Akan name");
+    else if (male.checked === true) {
+        alert("Hey, " + maleNames[dob] + " is your Akan name" + " since you were born on a " + Weekdays[dob]);
     } else {
-        alert("Hey, " + femaleNames[dob] + " is your Akan name");
+        alert("Hey, " + femaleNames[dob] + " is your Akan name" +" since you were born on a " + Weekdays[dob]);
     }
 
 }
