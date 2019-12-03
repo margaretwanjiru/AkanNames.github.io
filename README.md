@@ -23,6 +23,8 @@
 #### BDD
 * This application contains a short description and has a form that someone can fill his/her birthday details.The application then responds with the corresponding Akan name. If any of the fields are invalid an alert will notify the user to change and correct the invalid field. 
 
+![alt](image/image.jpg)
+
 
 #### SUPPORT & COLLABORATION
 * To anyone who would like to add a feature to th site, kindly clone the site  and further contact me on the permission to merge your changes.
